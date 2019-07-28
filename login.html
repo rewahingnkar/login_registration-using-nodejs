@@ -1,0 +1,63 @@
+<html>
+<head>
+<style>
+body
+{
+  font-family: cursive;
+  background-color: black;
+}
+h1
+{
+  color: green;
+}
+.form
+{
+  width:500px;
+}
+input[type='text'],input[type='password'],input[type='email']
+{
+  color: red;
+  background:transparent;
+  border: 0;
+  outline: 0;
+  border: 1px solid orange;
+  margin-top: 10px;
+  border-radius: 100px;
+  padding: 10px;
+}
+::placehoder{
+  color: grey;
+}
+input[type='submit']
+{
+  color:#e8e8e8;
+  background-color: #008B8B;
+  margin-top:50px;
+  cursor:pointer;
+  padding: 10px 25px;
+  border-radius: 120px;
+  outline: 0;
+}
+input[type='submit']:hover
+{
+  background-color:magenta;
+  border-radius: 120px;
+}
+</style>
+  <title>Login Page </title>
+</head>
+<body>
+<center>
+  <h1>Login Page</h1>
+<form action="/controllers/authenticate-controller" method="POST">
+
+<input type="text" name="email" placeholder="Email">
+<br>
+<input type="password" name="password" placeholder="Password">
+<br>
+<input type="submit" value="Submit">
+</form>
+</center>
+
+</body>
+</html>

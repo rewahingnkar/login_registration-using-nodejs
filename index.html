@@ -1,0 +1,60 @@
+<html>
+<head>
+<style>
+body
+{
+  background-color: black;
+}
+h1
+{
+  font-family: cursive;
+  color: orange;
+}
+.form
+{
+  width: 300px;
+}
+input[type='text'],input[type='password']
+{
+  color: #4fd4fd;
+  background:transparent;
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid green;
+  margin-top: 10px;
+  padding: 10px;
+}
+input[type='submit']
+{
+  color:#e8e8e8;
+  background-color: #008B8B;
+  margin-top:50px;
+  cursor:pointer;
+  padding: 10px 25px;
+  border-radius: 120px;
+  outline: 0;
+}
+input[type='submit']:hover
+{
+  background-color:magenta;
+  border-radius: 120px;
+}
+
+</style>
+<title>Registration Page</title>
+</head>
+<body>
+<center>
+  <h1>Register</h1>
+<form action="/controllers/register-controller" method="POST">
+<input type="text" name="name" placeholder="Name">
+<br>
+<input type="text" name="email" placeholder="Email">
+<br>
+<input type="password" name="password" placeholder="Password">
+<br>
+<input type="submit" value="Submit">
+</form>
+</center>
+</body>
+</html>
